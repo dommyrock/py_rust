@@ -2,6 +2,8 @@
 
 A curated overview of key Rust libraries for interfacing with Python, running ONNX models, and building ML pipelines — covering use cases from Python extension authoring to high-performance production inference.
 
+> **Last updated:** February 17, 2026
+
 ---
 
 ## Table of Contents
