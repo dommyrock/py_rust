@@ -29,6 +29,8 @@ A curated overview of key Rust libraries for interfacing with Python, running ON
 
 PyO3 is the de facto standard for Rust/Python interoperability. It provides bidirectional bindings — Rust can expose native extension modules callable from Python, and Python can be embedded and driven from within a Rust binary.
 
+[![Current Crates.io Version](https://img.shields.io/crates/v/pyo3.svg)](https://crates.io/crates/pyo3)
+
 ### Strong Points
 
 - **Macro-driven ergonomics** — `#[pymodule]`, `#[pyfunction]`, `#[pyclass]` attributes eliminate boilerplate when exposing Rust to Python.
@@ -69,6 +71,8 @@ Monty is a minimal, secure Python interpreter written in Rust, purpose-built for
 
 Monty's answer: **interpreter-level sandboxing with sub-microsecond startup.**
 
+[![Current Crates.io Version](https://img.shields.io/crates/v/monty.svg)](https://crates.io/crates/monty)
+
 ### Strong Points
 
 - **Extreme startup speed** — under 1 µs to start an interpreter instance (vs. hundreds of milliseconds for containers).
@@ -99,6 +103,8 @@ Core expressions, variables, functions, loops, conditionals, list comprehensions
 **License:** Apache-2.0 / MIT
 
 `ort` is an ergonomic Rust wrapper around Microsoft's ONNX Runtime (C++ library). It is the primary choice for high-performance ONNX inference in Rust, supporting models originally trained in PyTorch, TensorFlow, Keras, scikit-learn, and PaddlePaddle.
+
+[![Current Crates.io Version](https://img.shields.io/crates/v/ort.svg)](https://crates.io/crates/ort)
 
 ### Strong Points
 
@@ -141,6 +147,8 @@ Core expressions, variables, functions, loops, conditionals, list comprehensions
 
 `tch-rs` provides safe, idiomatic Rust bindings to the PyTorch C++ API (libtorch), staying as close as possible to the original C++ API. It is the most direct path to using the full PyTorch ecosystem from Rust.
 
+[![Current Crates.io Version](https://img.shields.io/crates/v/tch.svg)](https://crates.io/crates/tch)
+
 ### Strong Points
 
 - **Full autograd support** — gradient-based training works natively via `nn::VarStore`, which tracks all trainable parameters and their gradients.
@@ -176,6 +184,8 @@ Core expressions, variables, functions, loops, conditionals, list comprehensions
 
 Candle is HuggingFace's minimalist, PyTorch-inspired ML framework for Rust. It is designed for production inference with zero Python runtime and small binary footprint.
 
+[![Current Crates.io Version](https://img.shields.io/crates/v/candle-core.svg)](https://crates.io/crates/candle-core)
+
 #### Strong Points
 
 - **Pure Rust with GPU support** — CUDA and Metal backends; no C++ FFI dependencies for core operation.
@@ -198,6 +208,8 @@ Candle is HuggingFace's minimalist, PyTorch-inspired ML framework for Rust. It i
 **Current version:** `0.20.0` | **License:** Apache-2.0 / MIT
 
 Burn is the most complete Rust-native deep learning framework, covering both training and inference with a pluggable backend architecture.
+
+[![Current Crates.io Version](https://img.shields.io/crates/v/burn.svg)](https://crates.io/crates/burn)
 
 #### Strong Points
 
@@ -222,6 +234,8 @@ Burn is the most complete Rust-native deep learning framework, covering both tra
 
 Tract is a **pure Rust** ONNX and TensorFlow Lite inference engine, built and battle-tested by Sonos for production deployment in constrained audio devices.
 
+[![Current Crates.io Version](https://img.shields.io/crates/v/tract-onnx.svg)](https://crates.io/crates/tract-onnx)
+
 #### Strong Points
 
 - **Zero C++ dependencies** — unlike `ort`, tract is 100% Rust, making it safe for WASM, embedded targets, and easy to cross-compile and audit.
@@ -245,6 +259,8 @@ Tract is a **pure Rust** ONNX and TensorFlow Lite inference engine, built and ba
 
 The HuggingFace tokenizers library is written in Rust as its canonical implementation, with Python bindings layered on top. It is the industry-standard tokenization library for transformer-based LLMs.
 
+[![Current Crates.io Version](https://img.shields.io/crates/v/tokenizers.svg)](https://crates.io/crates/tokenizers)
+
 #### Strong Points
 
 - **Exceptional throughput** — tokenizes 1 GB of text in under 20 seconds on a single CPU.
@@ -267,6 +283,8 @@ The HuggingFace tokenizers library is written in Rust as its canonical implement
 **Current version:** `0.7.1` | **License:** Apache-2.0 / MIT
 
 Linfa is a modular, scikit-learn-inspired toolkit for **classical machine learning** in Rust. It fills the gap that deep learning frameworks leave: structured/tabular data, clustering, regression, and dimensionality reduction without neural networks.
+
+[![Current Crates.io Version](https://img.shields.io/crates/v/linfa.svg)](https://crates.io/crates/linfa)
 
 #### Strong Points
 
