@@ -468,6 +468,8 @@ println!("Changepoints at indices: {:?}", result.indices);
 **Current version:** `0.3.x`
 **License:** GPL-3.0
 
+[![Current Crates.io Version](https://img.shields.io/crates/v/anomaly_detection.svg)](https://crates.io/crates/anomaly_detection)
+
 A Rust port of Twitter's AnomalyDetection R package. Uses the **Seasonal Hybrid ESD (S-H-ESD)** test, which is built on STL decomposition followed by a Generalized ESD (Extreme Studentized Deviate) statistical test.
 
 **Best for:** Univariate time series with known weekly/daily seasonality and an approximately known number of anomalies.
@@ -516,7 +518,9 @@ let is_anomaly = scores[0] < -0.05;  // threshold tuned on validation data
 ### Other Rust Crates
 
 #### s2gpp — Series2Graph++ (Multivariate)
-**crates.io:** https://lib.rs/crates/s2gpp
+**crates.io:** https://crates.io/crates/s2gpp
+
+[![Current Crates.io Version](https://img.shields.io/crates/v/s2gpp.svg)](https://crates.io/crates/s2gpp)
 
 Rust implementation of graph-based anomaly detection for **multivariate** time series. Uses graph representations of trajectory patterns. Niche but self-contained. Useful when you have 2–10 correlated metrics and need to detect joint anomalies.
 
@@ -524,11 +528,15 @@ Rust implementation of graph-based anomaly detection for **multivariate** time s
 **crates.io:** https://crates.io/crates/scirs2-series
 **Version:** `0.1.0-alpha.1` (part of SciRS2 v0.1.5, February 2026)
 
+[![Current Crates.io Version](https://img.shields.io/crates/v/scirs2-series.svg)](https://crates.io/crates/scirs2-series)
+
 Part of the SciRS2 project (a SciPy port to Rust). Provides ARIMA-family models, autocorrelation, and trend analysis. **Alpha stage — not yet production-ready.** Monitor for stabilization; this could become a useful alternative to `augurs-ets` for ARIMA-style models.
 
 #### rten — Pure Rust ONNX Inference
 **Repository:** https://github.com/robertknight/rten
 **crates.io:** https://crates.io/crates/rten
+
+[![Current Crates.io Version](https://img.shields.io/crates/v/rten.svg)](https://crates.io/crates/rten)
 
 A pure Rust ONNX inference engine focused on neural network operators. CPU performance benchmarks competitively with ONNX Runtime on many architectures (2025). Best suited for DL-based time series models (darts/tsai exports). Does **not** focus on `ai.onnx.ml` operators, so not a substitute for `ort` with sklearn-exported models.
 
