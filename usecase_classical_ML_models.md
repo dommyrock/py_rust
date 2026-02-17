@@ -27,6 +27,10 @@ Most libraries in this overview are irrelevant to this use case. Ruling them out
 
 The remaining candidates — **`ort`**, **`tract`**, and **`linfa`** — are the only three worth evaluating for this use case.
 
+- [![Current Crates.io Version](https://img.shields.io/crates/v/ort.svg)](https://crates.io/crates/ort)
+- [![Current Crates.io Version](https://img.shields.io/crates/v/tract-onnx.svg)](https://crates.io/crates/tract-onnx)
+- [![Current Crates.io Version](https://img.shields.io/crates/v/linfa.svg)](https://crates.io/crates/linfa)
+
 ---
 
 ### Phase 1 — Training (offline, Python)
